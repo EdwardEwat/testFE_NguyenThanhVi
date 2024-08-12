@@ -1,0 +1,138 @@
+.footer {
+  height: auto;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  border-top: 1px solid rgba(216, 216, 216, 1);
+  margin: 20px;
+  padding-top: 20px;
+  width: 70%;
+}
+
+.footer-groups {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.group-name {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 12px;
+}
+
+.group-title {
+  color: rgba(97, 97, 97, 1);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.group-link {
+  color: rgba(97, 97, 97, 1);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.group-follow {
+  display: flex;
+}
+
+.group-follow input[type="email"] {
+  border: none;
+  outline: none;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 10px;
+  background-color: rgba(244, 245, 247, 1);
+  height: 40px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.group-follow input[type="email"]::placeholder {
+  color: rgba(130, 130, 130, 1);
+}
+
+.group-follow button {
+  width: 100%;
+  max-width: 46px;
+  height: 40px;
+  background-color: rgba(232, 159, 113, 1);
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .footer-groups {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-groups {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .group-name {
+    font-size: 16px;
+  }
+
+  .group-title,
+  .group-link {
+    font-size: 14px;
+  }
+
+  .group-follow input[type="email"] {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .group-follow button {
+    width: 100%;
+    max-width: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .group-name {
+    font-size: 14px;
+  }
+
+  .group-title,
+  .group-link {
+    font-size: 12px;
+  }
+}

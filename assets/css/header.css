@@ -1,0 +1,743 @@
+.header {
+  height: 900px;
+  margin: 0;
+}
+
+.color1 {
+  position: absolute;
+  background-color: #f9f1e7;
+  gap: 0;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 98%;
+  opacity: 1;
+}
+
+.color2 {
+  position: absolute;
+  background-color: #fcf8f3;
+  gap: 0;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.nav {
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: transparent;
+  gap: 50px;
+  margin: 40px auto;
+}
+
+.in-nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  width: 300px;
+}
+
+a.nav-link img {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+}
+
+.dropdown button {
+  border: none;
+  background-color: transparent;
+  color: #3a3a3a;
+  font-family: Gilroy, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.custom-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 30%;
+  padding: 10px;
+}
+
+.custom-search i {
+  padding: 0 10px;
+}
+
+.custom-search input[type="text"] {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.custom-search input[type="text"]::placeholder {
+  color: #616161;
+  font-family: Gilroy, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  gap: 20px;
+}
+
+.icons img {
+  height: 24px;
+  width: 24px;
+}
+
+.gallery {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  width: 85%;
+  height: 85%;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.slides .slide img {
+  width: 100%;
+  height: 75%;
+  margin-left: 0;
+  display: none;
+}
+
+.slides .slide.active img {
+  display: block;
+}
+
+.slides .slide .heroContent {
+  display: none;
+}
+
+.slides .slide.active .heroContent {
+  display: block;
+}
+
+.slides .slide .info {
+  display: none;
+}
+
+.slides .slide.active .info {
+  display: block;
+}
+
+.slides .slide .info2 {
+  display: none;
+}
+
+.slides .slide.active .info2 {
+  display: block;
+}
+
+.info {
+  position: absolute;
+  gap: 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  width: 20%;
+  height: 25%;
+  top: 65%;
+  right: 8%;
+  padding: 20px;
+}
+
+.info2 {
+  position: absolute;
+  gap: 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  width: 20%;
+  height: 25%;
+  top: 45%;
+  left: 10%;
+  padding: 20px;
+}
+
+.info2 a {
+  position: absolute;
+  right: 10%;
+  top: 80%;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.info a {
+  position: absolute;
+  right: 10%;
+  top: 80%;
+}
+
+.name {
+  font-family: Gilroy, sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.about {
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: rgba(97, 97, 97, 1);
+}
+
+.price {
+  font-family: Gilroy, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  border: none;
+}
+
+.next {
+  right: 1%;
+  background-color: #e89f71;
+  color: #ffffff;
+}
+
+.prev {
+  left: 1%;
+  background-color: #ecd5c6;
+  color: #e89f71;
+}
+
+.indicator {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 92%;
+  left: 52%;
+  transform: translateX(-50%);
+  gap: 10px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+}
+
+.fa-circle {
+  color: #d8d8d8;
+}
+
+.circle.active .fa-circle {
+  color: #e89f71;
+}
+
+.heroContent {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  width: 30%;
+  height: 80%;
+  padding: 30px;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.heroContent .primary {
+  font-family: Gilroy, sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.heroContent .second {
+  font-family: Gilroy, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(137, 137, 137, 1);
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10% 0;
+}
+
+.heroContent .button-area button {
+  border: none;
+  width: 100%;
+  background-color: rgba(232, 159, 113, 1);
+  color: white;
+  font-family: Gilroy, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: 80px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 500px;
+  }
+  .color1 {
+    width: 60%;
+    height: 500px;
+  }
+  .color2 {
+    height: 50px;
+  }
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .in-nav-menu {
+    width: 100%;
+    gap: 5px;
+  }
+  .custom-search {
+    width: 70%;
+  }
+  .icons {
+    width: 30%;
+    gap: 5px;
+  }
+  .gallery {
+    width: 100%;
+    height: 40%;
+  }
+  .info {
+    width: 30%;
+    height: 40%;
+    top: 55%;
+    right: 5%;
+    padding: 5px;
+  }
+  .info2 {
+    width: 30%;
+    height: 40%;
+    top: 40%;
+    left: 10%;
+    padding: 5px;
+  }
+
+  .info a {
+    right: 10%;
+    top: 70%;
+  }
+
+  .info2 a {
+    right: 10%;
+    top: 70%;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .price {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    top: 100px;
+  }
+  .indicator {
+    top: 85%;
+  }
+  .circle {
+    width: 10px;
+  }
+  .fa-circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heroContent {
+    top: 20%;
+    left: 10%;
+    width: 30%;
+    height: 75%;
+    padding: 5px;
+  }
+  .heroContent .primary {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .heroContent .second {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .heroContent .button-area button {
+    height: 30px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    height: 500px;
+  }
+  .color1 {
+    width: 60%;
+    height: 480px;
+  }
+  .color2 {
+    height: 500px;
+  }
+  .nav {
+    width: 95%;
+    gap: 15px;
+  }
+  .in-nav-menu {
+    width: 150px;
+    gap: 10px;
+  }
+  .custom-search {
+    width: 60%;
+  }
+  .icons {
+    width: 25%;
+    gap: 5px;
+  }
+  .gallery {
+    width: 100%;
+    height: 50%;
+  }
+  .info {
+    width: 20%;
+    height: 40%;
+    top: 55%;
+    right: 5%;
+    padding: 10px;
+  }
+  .info2 {
+    width: 20%;
+    height: 40%;
+    top: 40%;
+    left: 10%;
+    padding: 10px;
+  }
+
+  .info a {
+    right: 10%;
+    top: 70%;
+  }
+
+  .info2 a {
+    right: 10%;
+    top: 70%;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .price {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    top: 100px;
+  }
+  .indicator {
+    top: 90%;
+  }
+  .circle {
+    width: 10px;
+  }
+  .fa-circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heroContent {
+    top: 10%;
+    left: 5%;
+    width: 30%;
+    height: 80%;
+    padding: 20px;
+  }
+  .heroContent .primary {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .heroContent .second {
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .heroContent .button-area button {
+    height: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    height: 600px;
+  }
+  .color1 {
+    width: 60%;
+    height: 580px;
+  }
+  .color2 {
+    height: 600px;
+  }
+  .nav {
+    width: 90%;
+    gap: 20px;
+  }
+  .in-nav-menu {
+    width: 200px;
+    gap: 5px;
+  }
+  .custom-search {
+    width: 25%;
+  }
+  .icons {
+    width: 15%;
+    gap: 10px;
+  }
+  .gallery {
+    width: 100%;
+    height: 60%;
+  }
+  .info {
+    width: 22%;
+    height: 35%;
+    top: 60%;
+    right: 5%;
+    padding: 15px;
+  }
+  .info2 {
+    width: 22%;
+    height: 35%;
+    top: 40%;
+    left: 10%;
+    padding: 15px;
+  }
+
+  .info a {
+    right: 10%;
+    top: 70%;
+  }
+
+  .info2 a {
+    right: 10%;
+    top: 70%;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .price {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+  }
+  .indicator {
+    top: 90%;
+  }
+  .circle {
+    width: 10px;
+  }
+  .fa-circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heroContent {
+    top: 15%;
+    left: 10%;
+    width: 30%;
+    height: 80%;
+    padding: 20px;
+  }
+  .heroContent .primary {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .heroContent .second {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .heroContent .button-area button {
+    height: 40px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header {
+    height: 800px;
+  }
+  .color1 {
+    width: 50%;
+    height: 750px;
+  }
+  .color2{
+    height: 800px;
+  }
+  .nav {
+    width: 85%;
+    gap: 25px;
+  }
+  .in-nav-menu {
+    width: 250px;
+    gap: 25px;
+  }
+  .custom-search {
+    width: 35%;
+  }
+  .icons {
+    width: 12%;
+    gap: 15px;
+  }
+  .gallery {
+    width: 100%;
+    height: 70%;
+  }
+  .info {
+    width: 22%;
+    height: 30%;
+    top: 60%;
+    right: 5%;
+    padding: 20px;
+  }
+  .info2 {
+    width: 22%;
+    height: 30%;
+    top: 40%;
+    left: 10%;
+    padding: 20px;
+  }
+
+  .info a {
+    right: 10%;
+    top: 70%;
+  }
+
+  .info2 a {
+    right: 10%;
+    top: 70%;
+  }
+  .name {
+    font-size: 32px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .about {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .price {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .prev,
+  .next {
+    width: 45px;
+    height: 45px;
+    top: 50%;
+  }
+  .indicator {
+    top: 90%;
+  }
+  .circle {
+    width: 10px;
+  }
+  .fa-circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heroContent {
+    top: 10%;
+    left: 12%;
+    width: 35%;
+    height: 75%;
+    padding: 25px;
+  }
+  .heroContent .primary {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .heroContent .second {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

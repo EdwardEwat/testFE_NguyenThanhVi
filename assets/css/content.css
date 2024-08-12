@@ -1,0 +1,865 @@
+.content {
+  height: auto;
+}
+
+.group {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.group .IMG {
+  width: 40px;
+  height: 40px;
+  margin: 20px 22.5px;
+}
+
+.group .infoGroup .F-info {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  margin: 5px 0 0;
+  color: rgba(58, 58, 58, 1);
+}
+
+.group .infoGroup .S-info {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(137, 137, 137, 1);
+  margin: 0;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  margin: 20px 100px;
+}
+
+.products {
+  margin: 100px 100px;
+}
+
+.products .title {
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  gap: 30px 30px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.product .card {
+  width: 285px;
+  height: 446px;
+  background-color: rgba(244, 245, 247, 1);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card .cardImg {
+  width: 285px;
+  height: 301px;
+}
+
+.card .cardSpecial {
+  position: absolute;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(233, 113, 113, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  right: 20px;
+  top: 30px;
+}
+
+.card .cardSpecial.newSpecial {
+  background-color: rgba(46, 193, 172, 1);
+}
+
+.card:hover .cardBehind {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card .cardBehind {
+  background-color: rgba(58, 58, 58, 0.5);
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.card .cardBehind .cardButtons .addProduct {
+  width: 202px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(232, 159, 113, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+}
+
+.card .cardBehind .cardButtons .anotherButtons {
+  margin-top: 20px;
+}
+
+.card .cardBehind .cardButtons .anotherButtons .share,
+.card .cardBehind .cardButtons .anotherButtons .like {
+  border: none;
+  background-color: transparent;
+}
+
+.card .cardBehind .cardButtons .anotherButtons .share .buttonText,
+.card .cardBehind .cardButtons .anotherButtons .like .buttonText {
+  color: rgba(255, 255, 255, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.card .cardInfo {
+  margin: 20px;
+}
+
+.card .cardInfo .cardName {
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.card .cardInfo .cardSName {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(137, 137, 137, 1);
+}
+
+.card .cardInfo .cardPrice {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.card .cardInfo .cardPrice .priceTemp {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(58, 58, 58, 1);
+}
+
+.card .cardInfo .cardPrice .priceTotal {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(176, 176, 176, 1);
+}
+
+.buttonShow {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.buttonShow .showMore {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  background-color: transparent;
+  color: rgba(232, 159, 113, 1);
+  width: 245px;
+  height: 48px;
+  border: 1px solid rgba(232, 159, 113, 1);
+}
+
+.inspirations {
+  width: 100%;
+  height: 670px;
+  background-color: rgba(252, 248, 243, 1);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 0 200px;
+}
+
+.inspirations .title {
+  width: 446px;
+}
+
+.inspirations .title p.title {
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
+.inspirations .title p.subtitle {
+  color: rgba(97, 97, 97, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.inspirations .title a {
+  color: rgba(255, 255, 255, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  border-radius: 0;
+  text-align: center;
+  background-color: rgba(232, 159, 113, 1);
+  width: 176px;
+  height: 48px;
+}
+
+.imgPreview {
+  width: 480px;
+  height: 582px;
+  display: flex;
+}
+
+.imgPreview .img {
+  position: absolute;
+  z-index: 0;
+}
+
+.imgPreview .infoPreview .contentPreview {
+  position: relative;
+  width: 257.82px;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.72);
+  top: 440px;
+  left: 20px;
+  padding: 20px 32px;
+}
+
+.contentPreview .title {
+  color: rgba(97, 97, 97, 1);
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contentPreview .name {
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+  color: rgba(58, 58, 58, 1);
+  margin-top: 20px;
+}
+
+.strikethrough {
+  width: 27px;
+  height: 1px;
+  background-color: rgba(97, 97, 97, 1);
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  top: -4px;
+}
+
+.infoPreview {
+  display: flex;
+}
+
+.infoPreview a {
+  width: 57.03px;
+  height: 48px;
+  background-color: rgba(232, 159, 113, 1);
+  position: relative;
+  z-index: 1;
+  top: 523px;
+  left: 20px;
+  margin-left: -1px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.tips {
+  margin: 30px 40px;
+  justify-content: center;
+}
+
+.tips-title {
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  display: block;
+}
+
+.tricks {
+  height: 410px;
+  width: 100%;
+}
+
+.tips-indicator {
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tricks .buttons {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tricks .buttons .tips-next,
+.tricks .buttons .tips-prev {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tips-prev {
+  left: 240px;
+}
+
+.tips-next {
+  right: 240px;
+}
+
+.tricks-slides {
+  display: grid;
+  grid-template-columns: repeat(3, 391px);
+  gap: 40px;
+  justify-content: center;
+  height: 381px;
+}
+
+.tricks-slide {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 1);
+  width: 391px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tricks-slide:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.tricks-slide .slide-name {
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: rgba(58, 58, 58, 1);
+  margin: 16px 0 0 16px;
+}
+
+.tricks-slide .slide-date {
+  color: rgba(137, 137, 137, 1);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin: 10px 0 20px 16px;
+}
+
+.share-img {
+  height: 900px;
+  position: relative;
+  justify-content: center;
+}
+
+.share-title .title {
+  color: rgba(97, 97, 97, 1);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.share-title .tag {
+  color: rgba(58, 58, 58, 1);
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs img {
+  position: relative;
+}
+
+#img1 {
+  position: absolute;
+  top: 52%;
+  left: 12%;
+}
+#img2 {
+  position: absolute;
+  top: 10.5%;
+  right: 6%;
+}
+#img3 {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+#img4 {
+  position: absolute;
+  top: 62%;
+  right: 6%;
+}
+#img5 {
+  position: absolute;
+  top: 62%;
+  right: 21.1%;
+}
+#img6 {
+  position: absolute;
+  top: 52%;
+  right: 52%;
+}
+#img7 {
+  position: absolute;
+  bottom: 27%;
+  left: 52%;
+}
+#img8 {
+  position: absolute;
+  bottom: 52%;
+  right: 52%;
+}
+#img9 {
+  position: absolute;
+  bottom: 52%;
+  left: 11%;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .feature,
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product .card {
+    display: flex;
+    margin-left: 90px;
+  }
+  .tips-next,
+  .tips-prev {
+    top: 30%;
+  }
+  .tips-prev {
+    left: -20px;
+  }
+  .tips-next {
+    right: -20px;
+  }
+  #img1 {
+    position: absolute;
+    top: 52%;
+    left: -10%;
+  }
+  #img2 {
+    position: absolute;
+    top: 10.5%;
+    right: -18%;
+  }
+  #img3 {
+    position: absolute;
+    top: 20%;
+    right: -4%;
+  }
+  #img4 {
+    position: absolute;
+    top: 62%;
+    right: -18%;
+  }
+  #img5 {
+    position: absolute;
+    top: 62%;
+    right: 5.68%;
+  }
+  #img6 {
+    position: absolute;
+    top: 52%;
+    right: 52%;
+  }
+  #img7 {
+    position: absolute;
+    bottom: 27%;
+    left: 52%;
+  }
+  #img8 {
+    position: absolute;
+    bottom: 52%;
+    right: 52%;
+  }
+  #img9 {
+    position: absolute;
+    bottom: 52%;
+    left: -10%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .feature,
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products {
+    margin: 50px 50px;
+  }
+
+  .group .IMG {
+    width: 30px;
+    height: 30px;
+  }
+
+  .group .infoGroup .F-info,
+  .group .infoGroup .S-info {
+    font-size: 14px;
+  }
+
+  .product .card {
+    width: 240px;
+    height: 470px;
+    display: flex;
+    margin-left: 90px;
+  }
+
+  .tips-next,
+  .tips-prev {
+    top: 30%;
+  }
+  .tips-prev {
+    left: -20px;
+  }
+  .tips-next {
+    right: -20px;
+  }
+
+  .inspirations {
+    gap: 0 50px;
+    padding-left: 20px;
+  }
+
+  #img1 {
+    position: absolute;
+    top: 52%;
+    left: -25%;
+  }
+  #img2 {
+    position: absolute;
+    top: 10.5%;
+    right: -36%;
+  }
+  #img3 {
+    position: absolute;
+    top: 20%;
+    right: -18%;
+  }
+  #img4 {
+    position: absolute;
+    top: 62%;
+    right: -35%;
+  }
+  #img5 {
+    position: absolute;
+    top: 62%;
+    right: -6%;
+  }
+  #img6 {
+    position: absolute;
+    top: 52%;
+    right: 52%;
+  }
+  #img7 {
+    position: absolute;
+    bottom: 27%;
+    left: 52%;
+  }
+  #img8 {
+    position: absolute;
+    bottom: 52%;
+    right: 52%;
+  }
+  #img9 {
+    position: absolute;
+    bottom: 52%;
+    left: -30%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .feature,
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products {
+    margin: 30px 30px;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+
+  .group .IMG {
+    margin: 10px 0;
+  }
+
+  .group .infoGroup .F-info,
+  .group .infoGroup .S-info {
+    font-size: 12px;
+  }
+
+  .product .card {
+    width: 240px;
+    height: 470px;
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .tips-next,
+  .tips-prev {
+    top: 30%;
+  }
+  .tips-prev {
+    left: -20px;
+  }
+  .tips-next {
+    right: -20px;
+  }
+
+  .inspirations {
+    gap: 0 50px;
+    padding-left: 200px;
+  }
+
+  #img1 {
+    position: absolute;
+    top: 52%;
+    left: -45%;
+  }
+  #img2 {
+    position: absolute;
+    top: 10.5%;
+    right: -56%;
+  }
+  #img3 {
+    position: absolute;
+    top: 20%;
+    right: -35%;
+  }
+  #img4 {
+    position: absolute;
+    top: 62%;
+    right: -56%;
+  }
+  #img5 {
+    position: absolute;
+    top: 62%;
+    right: -20%;
+  }
+  #img6 {
+    position: absolute;
+    top: 52%;
+    right: 52%;
+  }
+  #img7 {
+    position: absolute;
+    bottom: 27%;
+    left: 52%;
+  }
+  #img8 {
+    position: absolute;
+    bottom: 52%;
+    right: 52%;
+  }
+  #img9 {
+    position: absolute;
+    bottom: 52%;
+    left: -40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature,
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    margin: 20px 20px;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+
+  .group .IMG {
+    width: 25px;
+    height: 25px;
+    margin: 5px 0;
+  }
+
+  .group .infoGroup .F-info,
+  .group .infoGroup .S-info {
+    font-size: 10px;
+  }
+
+  .product .card {
+    width: 240px;
+    height: 470px;
+    display: flex;
+    margin-left: 90px;
+  }
+
+  .tips-next,
+  .tips-prev {
+    top: 30%;
+  }
+  .tips-prev {
+    left: -20px;
+  }
+  .tips-next {
+    right: -20px;
+  }
+
+  .inspirations {
+    gap: 0 50px;
+    padding-left: 400px;
+  }
+
+  #img1 {
+    position: absolute;
+    top: 52%;
+    left: -85%;
+  }
+  #img2 {
+    position: absolute;
+    top: 10.5%;
+    right: -136%;
+  }
+  #img3 {
+    position: absolute;
+    top: 20%;
+    right: -96%;
+  }
+  #img4 {
+    position: absolute;
+    top: 62%;
+    right: -136%;
+  }
+  #img5 {
+    position: absolute;
+    top: 62%;
+    right: -69%;
+  }
+  #img6 {
+    position: absolute;
+    top: 52%;
+    right: 52%;
+  }
+  #img7 {
+    position: absolute;
+    bottom: 27%;
+    left: 52%;
+  }
+  #img8 {
+    position: absolute;
+    bottom: 52%;
+    right: 52%;
+  }
+  #img9 {
+    position: absolute;
+    bottom: 52%;
+    left: -80%;
+  }
+}
